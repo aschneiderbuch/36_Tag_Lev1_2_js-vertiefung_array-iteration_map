@@ -40,9 +40,15 @@ function upperDrinks() {
 upperDrinks();
 
 // Arrow functions
-const newGetränke = getraenke.map((element) => {
+const newGetränke = () => { 
+    
+    getraenke.map((element) => {
     const body = document.querySelector("body")
-    body.innerHTML += `${element.toUpperCase()},  `
+    body.innerHTML += `${element.toUpperCase()}, <br> `
     console.log(element.toUpperCase())
-})
+})}
 
+
+newGetränke()
+newGetränke()
+newGetränke()
